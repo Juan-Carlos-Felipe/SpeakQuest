@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Sky blue as base */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#ui-layer {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Common UI styles */
+.bilingual-text {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #4a90e2;
+    pointer-events: auto;
+}
+
+.english-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2c3e50;
+    display: block;
+}
+
+.spanish-text {
+    font-style: italic;
+    font-size: 1em;
+    color: #7f8c8d;
+    display: block;
+}
